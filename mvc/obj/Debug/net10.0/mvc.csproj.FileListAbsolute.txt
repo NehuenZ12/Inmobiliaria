@@ -96,3 +96,10 @@ C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\obj\Debug\net10.0\refint\mvc.d
 C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\obj\Debug\net10.0\mvc.pdb
 C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\obj\Debug\net10.0\mvc.genruntimeconfig.cache
 C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\obj\Debug\net10.0\ref\mvc.dll
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\bin\Debug\net10.0\Npgsql.dll
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\obj\Debug\net10.0\mvc.csproj.AssemblyReference.cache
+C:\Users\Nehuen\Documents\GitHub\Inmobiliaria\mvc\obj\Debug\net10.0\mvc.csproj.Up2Date
