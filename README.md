@@ -18,16 +18,56 @@ A continuación se presenta el esquema del modelo de datos correspondiente a la 
 
 ### Diagrama Entidad-Relación (DER) / Diagrama de Clases
 
-![Diagrama del Proyecto](./path/o/url/al/diagrama.png)
 
-> **Nota:** Puedes adjuntar la imagen en el repositorio (por ejemplo, en una carpeta `/docs` o `/img`) y enlazarla como se muestra arriba, o pegar directamente un diagrama generado en Mermaid.
 
-<details>
-<summary>Ver diagrama en código Mermaid (Opcional)</summary>
+El proyecto utiliza PostgreSQL.
 
-```mermaid
-erDiagram
-    USUARIO ||--o{ PEDIDO : realiza
-    PEDIDO ||--|{ DETALLE_PEDIDO : contiene
-    PRODUCTO ||--o{ DETALLE_PEDIDO : pertenece
-```
+Requisitos
+
+- PostgreSQL instalado y ejecutándose.
+
+- DBeaver (opcional, recomendado para administrar la base de datos).
+
+- .NET SDK compatible con el proyecto.
+
+
+Crear y levantar la base de datos
+
+1_ Abrir PostgreSQL/DBeaver y conectarse al servidor localhost:5432.
+
+2_ Crear una base de datos llamada:
+
+inmobiliaria
+
+En DBeaver se puede hacer con:
+
+CREATE DATABASE inmobiliaria;
+
+3_ Abrir un SQL Editor conectado a la base inmobiliaria.
+
+4_ Abrir el archivo inmobiliaria.sql que se encuentra en el proyecto.
+
+5_ Ejecutar todo el script.
+
+6_ El script crea las tablas propietario e inmueble, crea la clave foránea entre ellas y carga datos iniciales de prueba.
+
+7_ Verificar que las tablas aparezcan dentro de:
+
+inmobiliaria > Schemas > public > Tables
+
+Conexión del proyecto
+
+Configurar la cadena de conexión en appsettings.json con los datos del PostgreSQL local:
+
+"ConnectionStrings": {
+    "DefaultConnection": "Host=localhost;Port=5432;Database=inmobiliaria;Username=postgres;Password=TU_CONTRASEÑA"
+}
+
+Ejecutar el proyecto:
+
+Desde la carpeta que contiene mvc.csproj:
+
+dotnet restore
+dotnet run
+
+Luego abrir la URL que indique la terminal.
