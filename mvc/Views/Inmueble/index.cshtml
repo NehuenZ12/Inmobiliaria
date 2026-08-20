@@ -2,7 +2,6 @@
 
 <h1>Inmuebles</h1>
 
-<!-- Boton para crear un nuevo inmueble -->
 <a asp-action="Create" class="btn btn-primary mb-3">
     +
 </a>
@@ -17,6 +16,7 @@
             <th>Precio por día</th>
             <th>Disponible</th>
             <th>Propietario</th>
+            <th>Acciones</th>
         </tr>
     </thead>
 
@@ -35,6 +35,27 @@
                 <td>
                     @inmueble.Propietario.Nombre
                     @inmueble.Propietario.Apellido
+                </td>
+
+                <td>
+                    <a asp-action="Edit"
+                       asp-route-id="@inmueble.Id"
+                       class="btn btn-primary">
+                        Editar
+                    </a>
+
+                    <form asp-action="Delete"
+                          asp-route-id="@inmueble.Id"
+                          method="post"
+                          style="display:inline">
+
+                        <button type="submit"
+                                class="btn btn-danger"
+                                onclick="return confirm('¿Está seguro de eliminar este inmueble?')">
+                            Eliminar
+                        </button>
+
+                    </form>
                 </td>
             </tr>
         }

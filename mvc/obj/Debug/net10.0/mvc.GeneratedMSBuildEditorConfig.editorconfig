@@ -35,8 +35,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5tdWVibGVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nehuen/Documents/GitHub/Inmobiliaria/mvc/Views/Inmueble/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5tdWVibGVcaW5kZXguY3NodG1s
+[C:/Users/Nehuen/Documents/GitHub/Inmobiliaria/mvc/Views/Inmueble/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5tdWVibGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nehuen/Documents/GitHub/Inmobiliaria/mvc/Views/Inmueble/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5tdWVibGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nehuen/Documents/GitHub/Inmobiliaria/mvc/Views/Propietario/Create.cshtml]

@@ -25,10 +25,8 @@ namespace mvc.Controllers
             return View(inmuebles);
         }
 
-
         // CREAR INMUEBLE
 
-        // Muestra el formulario
         public async Task<IActionResult> Create()
         {
             await CargarPropietarios();
@@ -36,7 +34,6 @@ namespace mvc.Controllers
             return View();
         }
 
-        // Recibe los datos del formulario
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Inmueble inmueble)
@@ -56,7 +53,74 @@ namespace mvc.Controllers
         }
 
 
-        // Carga los propietarios para el desplegable
+        // EDITAR INMUEBLE
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var inmueble = await _context.Inmuebles.FindAsync(id);
+
+            if (inmueble == null)
+            {
+                return NotFound();
+            }
+
+            await CargarPropietarios();
+
+            return View(inmueble);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Inmueble inmueble)
+        {
+            if (id != inmueble.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                _context.Inmuebles.Update(inmueble);
+
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            await CargarPropietarios();
+
+            return View(inmueble);
+        }
+
+
+        // ELIMINAR INMUEBLE
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var inmueble = await _context.Inmuebles.FindAsync(id);
+
+            if (inmueble == null)
+            {
+                return NotFound();
+            }
+
+            _context.Inmuebles.Remove(inmueble);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        // CARGAR PROPIETARIOS
+
         private async Task CargarPropietarios()
         {
             var propietarios = await _context.Propietarios
