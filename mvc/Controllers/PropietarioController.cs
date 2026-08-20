@@ -27,7 +27,7 @@ namespace mvc.Controllers
             return View();
         }
 
-        // Recibe los datos del formulario y guarda el propietario
+        // Recibe los datos del formulario y guarda el propietario en la bdd
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Propietario propietario)
