@@ -8,5 +8,9 @@ namespace mvc.Models
             : base(options)
         {
         }
+
+        public DbSet<Propietario> Propietarios { get; set; }
+
+        public DbSet<Inmueble> Inmuebles { get; set; }
     }
 }
