@@ -1,0 +1,32 @@
+@model IEnumerable<mvc.Models.Propietario>
+
+<h1>Propietarios</h1>
+
+<a href="#" class="btn btn-primary">+</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var propietario in Model)
+        {
+            <tr>
+                <td>@propietario.Id</td>
+                <td>@propietario.Nombre</td>
+                <td>@propietario.Apellido</td>
+                <td>@propietario.Dni</td>
+                <td>@propietario.Telefono</td>
+                <td>@propietario.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
