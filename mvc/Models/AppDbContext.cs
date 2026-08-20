@@ -44,11 +44,52 @@ namespace mvc.Models
                 .HasColumnName("email");
 
 
-            // Tabla Inmueble
-            modelBuilder.Entity<Inmueble>()
-                .ToTable("inmueble");
+            // INMUEBLE
 
-            // Relacion Inmueble -> Propietario
+            modelBuilder.Entity<Inmueble>().ToTable("inmueble");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Id)
+                .HasColumnName("id");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Direccion)
+                .HasColumnName("direccion");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Cupo)
+                .HasColumnName("cupo");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Tipo)
+                .HasColumnName("tipo");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Latitud)
+                .HasColumnName("latitud");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Longitud)
+                .HasColumnName("longitud");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.PrecioPorDia)
+                .HasColumnName("precio_por_dia");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.PorcentajeReserva)
+                .HasColumnName("porcentaje_reserva");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.Disponible)
+                .HasColumnName("disponible");
+
+            modelBuilder.Entity<Inmueble>()
+                .Property(i => i.PropietarioId)
+                .HasColumnName("propietario_id");
+
+
+            // Relacion: un propietario puede tener varios inmuebles
             modelBuilder.Entity<Inmueble>()
                 .HasOne(i => i.Propietario)
                 .WithMany()
