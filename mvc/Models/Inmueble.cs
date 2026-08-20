@@ -23,7 +23,7 @@ namespace mvc.Models
         // Clave foránea
         public int PropietarioId { get; set; }
 
-        // Relación con Propietario
-        public Propietario Propietario { get; set; } = null!;
+        // Propietario asociado al inmueble
+        public Propietario? Propietario { get; set; }
     }
 }
