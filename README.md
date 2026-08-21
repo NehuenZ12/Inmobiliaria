@@ -18,6 +18,7 @@ A continuación se presenta el esquema del modelo de datos correspondiente a la 
 
 ### Diagrama Entidad-Relación (DER) / Diagrama de Clases
 
+![Diagrama del proyecto Entidad-Relación (DER) ](./Diagrama.jpeg)
 
 
 El proyecto utiliza PostgreSQL.

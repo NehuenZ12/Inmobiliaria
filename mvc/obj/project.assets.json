@@ -189,19 +189,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nehuen\\.nuget\\packages\\": {}
+    "C:\\Users\\Jose Garces\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nehuen\\Documents\\GitHub\\Inmobiliaria\\mvc\\mvc.csproj",
+      "projectUniqueName": "C:\\Users\\Jose Garces\\Documents\\GitHub\\Inmobiliaria\\mvc\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "C:\\Users\\Nehuen\\Documents\\GitHub\\Inmobiliaria\\mvc\\mvc.csproj",
-      "packagesPath": "C:\\Users\\Nehuen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nehuen\\Documents\\GitHub\\Inmobiliaria\\mvc\\obj\\",
+      "projectPath": "C:\\Users\\Jose Garces\\Documents\\GitHub\\Inmobiliaria\\mvc\\mvc.csproj",
+      "packagesPath": "C:\\Users\\Jose Garces\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jose Garces\\Documents\\GitHub\\Inmobiliaria\\mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nehuen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jose Garces\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
